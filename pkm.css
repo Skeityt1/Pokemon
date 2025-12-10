@@ -337,7 +337,7 @@ table.d iframe {
 
 /* Cột trailer */
 table.d td:last-child {
-    text-align: center;
+    text-align: left;
 }
 
 /* iframe trailer full ô */
