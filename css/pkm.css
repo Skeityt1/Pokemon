@@ -1,0 +1,467 @@
+*{
+
+}
+
+.pkm-page {
+    min-height: 100vh;
+    background-image: url('../img/bkgr.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.a{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: yellow;
+    text-align: center;
+    padding: 30px 20px;   /* quan trọng */
+    box-sizing: border-box;
+    font-size: 80px;
+
+}
+.b{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: yellow;
+    text-align: center;
+    padding: 30px 20px;   /* quan trọng */
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 1.7;
+}
+.c{
+    height: 50px;
+    width:100%;
+    opacity:1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: yellow;
+    text-align: center;
+    background-color:#2e2e1f;
+    margin: 0px;
+    
+    font-size:50px;
+    box-shadow:5px 5px 10px #2e2e1f;
+    
+}
+
+/* MENU CHÍNH */
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu > li {
+    position: relative;
+}
+
+.menu > li > a {
+    display: block;
+    padding: 10px 25px;
+    color: yellow;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+.menu > li > a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* DROPDOWN */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2e2e1f;
+    min-width: 200px;
+    box-shadow: 5px 5px 10px #2e2e1f;
+    z-index: 1000;
+}
+
+.submenu li {
+    list-style: none;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px;
+    color: yellow;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.submenu li a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* HIỆN DROPDOWN KHI HOVER */
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.arrow {
+    display: inline-block;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+/* khi hover vào dropdown */
+.dropdown:hover .arrow {
+    transform: rotate(180deg);
+}
+
+
+.c tr th a{
+    margin: 30px;
+    display: block;
+}
+.c tr th a:hover{
+    background-color:white;
+}
+.d{
+    padding: 5px;
+    text-align: left; 
+    border: 1px solid black;
+    border-collapse: collapse;
+    border: 1px solid black;
+    border-collapse: collapse;
+    height: 10px;   
+}
+.e{
+    padding: 5px;
+    text-align: center; 
+    height: 10px;   
+}
+
+.e a{
+    text-decoration: none;
+    color: inherit;
+}
+.e a:hover{
+    opacity: 0.85;
+}
+
+.f{
+    padding: 5px;
+    text-align: left; 
+    height: 10px;   
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;   /* căn giữa ngang */
+    width: 100%;               /* kéo dài toàn bộ chiều ngang */
+    gap: 20px;
+    text-decoration: none;
+}
+
+.header-bar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    background-color: #cda12c;
+    width: 100%;
+    box-shadow: 5px 5px 10px #2e2e1f;   /* thêm hiệu ứng giống .c */
+}
+
+
+.header-bar .logo {
+    height: 80px;
+}
+
+.header-bar .site-title {
+    font-size: 40px;
+    margin: 0;
+    font-weight: 700;
+    color: white; /* giúp chữ nổi bật trên nền vàng đậm */
+}
+
+.header-bar {
+    width: 100%;              /* quan trọng để kéo dài hết khung div */
+    background-color: #cda12c;
+    padding: 15px;
+}
+
+.header-content {
+    display: flex;            /* giúp 2 div nằm ngang */
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+}
+
+.title-box {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 80px;
+}
+
+.site-title {
+    font-size: 40px;
+    margin: 0;
+    color: white;
+    font-weight: 700;
+}
+
+
+p{
+    opacity: 1.0;
+}
+a{
+    text-decoration: none;
+}
+
+.box-border {
+    width: 250px;
+    height: 350px;
+    padding: 15px;            
+    border: 2px solid #000000;  
+    margin: auto;            
+    margin-top: 20px;        
+    box-sizing: border-box;  
+}
+
+/* ===== GIỚI THIỆU PHIM ===== */
+.movie-intro {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-left: 6px solid #cda12c;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.movie-intro h2 {
+    margin-top: 0;
+    color: #2e2e1f;
+    font-size: 28px;
+}
+
+.movie-intro p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+}
+
+/* ===== BẢNG PHIM ===== */
+table.d {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px auto;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Header */
+table.d th {
+    background-color: #2e2e1f;
+    color: yellow;
+    font-size: 18px;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+/* Ô dữ liệu */
+table.d td {
+    padding: 15px;
+    vertical-align: top;
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Hover từng dòng */
+table.d tr:hover {
+    background-color: #fff9e6;
+}
+
+/* Cột movie (số) */
+table.d td:first-child {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* iframe trailer */
+table.d iframe {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Responsive nhẹ */
+@media (max-width: 900px) {
+    table.d td, table.d th {
+        font-size: 14px;
+    }
+    .ads {
+        display: none;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+}
+
+/* Cột trailer */
+table.d td:last-child {
+    text-align: center;
+}
+
+/* iframe trailer full ô */
+table.d iframe {
+    width: 100%;
+    height: 315px;
+    border-radius: 10px;
+}
+
+.page-layout {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background-color: transparent; /* cho phép nhìn thấy background */
+}
+
+/* Cột quảng cáo */
+.ads {
+    width: 15%;
+    position: sticky;
+    top: 200px;        /* ⬅ đẩy xuống dưới header + shadow */
+    height: fit-content;
+}
+
+
+/* Dính theo cuộn */
+.ads-inner {
+    position: sticky;
+    top: 0;
+}
+
+/* Nội dung giữa */
+.main-content {
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Box quảng cáo */
+.ad-box {
+    height: 300px;
+    margin-bottom: 20px;
+    background: #eaeaea;
+    border: 2px dashed #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #555;
+}
+
+.movie-list {
+    margin-top: 30px;
+}
+
+.movie-ul {
+    list-style: none;        /* bỏ dấu chấm */
+    padding: 0;
+    margin: 0;
+}
+
+.movie-ul li {
+    margin: 12px 0;
+}
+
+.movie-ul a {
+    display: block;
+    padding: 12px 18px;
+    background: #2e2e1f;
+    color: yellow;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    box-shadow: 4px 4px 8px #2e2e1f;
+    transition: all 0.3s ease;
+}
+
+.movie-ul a:hover {
+    background: #cda12c;
+    color: white;
+    transform: translateX(6px);
+}
+
+.video-wrap { max-width: 100%; overflow: hidden; width: 100%; position: relative;}
+.video-wrap iframe { width: 100%; height: 315px; border-radius: 8px; display:block}
+
+/* fallback link */
+.fallback { margin-top: 8px; text-align: center; }
+.fallback a { color: #cda12c; text-decoration: none; font-weight: 600; }
+
+/* ===== MOVIE PAGE ONLY ===== */
+
+.movie-page {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Tiêu đề phim */
+.movie-page h2 {
+    font-size: 32px;
+    color: #2e2e1f;
+    margin-bottom: 15px;
+}
+
+/* Nội dung mô tả */
+.movie-page p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Khung video */
+.movie-page .video-wrap {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.movie-page iframe {
+    width: 100%;
+    height: 360px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.4);
+}
+
+/* Link fallback */
+.movie-page .fallback {
+    text-align: center;
+    margin-top: 8px;
+}
+
+.movie-page .fallback a {
+    color: #cda12c;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.movie-page .fallback a:hover {
+    text-decoration: underline;
+}
