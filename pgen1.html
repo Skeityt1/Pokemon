@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/pkm.css" type="text/css">
+    <link rel="stylesheet" href="pkm.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pokémon Information</title>
@@ -11,9 +11,9 @@
 
 <div style="display: flex; width: 100%;">
     <header class="header-bar">
-        <a href="pkm.html" class="header-content">
+        <a href="index.html" class="header-content">
             <div class="logo-box">
-                <img src="../img/logo.png" alt="Pokémon Logo" class="logo">
+                <img src="img/logo.png" alt="Pokémon Logo" class="logo">
             </div>
             <div class="title-box">
                 <h1 class="site-title">Pokémon Information</h1>
@@ -24,10 +24,10 @@
 
 <nav class="c">
     <ul class="menu">
-        <li><a href="pkm.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
 
         <li class="dropdown">
-            <a href="pokemon.html">Pokémon <span class="arrow">▾</span></a>
+            <a href="pokémon.html">Pokémon <span class="arrow">▾</span></a>
             <ul class="submenu">
                 <li><a href="pgen1.html">Generation 1</a></li>
                 <li><a href="pgen2.html">Generation 2</a></li>
@@ -58,163 +58,185 @@
     </ul>
 </nav>
 
-<p style="background-color: grey; height: 38px; font-weight: 700; font-size: 38px">
-    Generation 1
-</p>
+<!-- LAYOUT CHÍNH -->
+<div class="page-layout">
 
-<table style="width: 100%">
-<tr class="f">
+    <!-- QUẢNG CÁO TRÁI -->
+    <aside class="ads ads-left">
+        <div class="ads-inner">
+            <div class="ad-box">Quảng cáo trái</div>
+        </div>
+    </aside>
 
-<!-- Bulbasaur -->
-<td class="e">
-<a href="https://pokemondb.net/pokedex/bulbasaur" target="_blank">
-<img src="../img/bulbasaur.jpg" style="height:120px;width:120px">
-<p>#001<br>Bulbasaur<br>Grass · Poison</p>
-</a>
-</td>
+    <!-- NỘI DUNG -->
+    <main class="main-content">
+        <p style="background-color: grey; height: 38px; font-weight: 700; font-size: 38px">
+            Generation 1
+        </p>
 
-<td class="e">
-<img src="../img/tải xuống.png" style="height:40px;width:87.5px">
-<p>(Level 16)</p>
-</td>
+        <table style="width: 100%">
+        <tr class="f">
 
-<!-- Ivysaur -->
-<td class="e">
-<a href="https://pokemondb.net/pokedex/ivysaur" target="_blank">
-<img src="../img/ivysaur.jpg" style="height:120px;width:120px">
-<p>#002<br>Ivysaur<br>Grass · Poison</p>
-</a>
-</td>
+        <!-- Bulbasaur -->
+        <td class="e">
+        <a href="https://pokemondb.net/pokedex/bulbasaur" target="_blank">
+        <img src="img/bulbasaur.jpg" style="height:120px;width:120px">
+        <p>#001<br>Bulbasaur<br>Grass · Poison</p>
+        </a>
+        </td>
 
-<td class="e">
-<img src="../img/tải xuống.png" style="height:40px;width:87.5px">
-<p>(Level 32)</p>
-</td>
+        <td class="e">
+        <img src="img/tải xuống.png" style="height:40px;width:87.5px">
+        <p>(Level 16)</p>
+        </td>
 
-<!-- Venusaur -->
-<td class="e">
-<a href="https://pokemondb.net/pokedex/venusaur" target="_blank">
-<img src="../img/venusaur.png" style="height:120px;width:120px">
-<p>#003<br>Venusaur<br>Grass · Poison</p>
-</a>
-</td>
+        <!-- Ivysaur -->
+        <td class="e">
+        <a href="https://pokemondb.net/pokedex/ivysaur" target="_blank">
+        <img src="img/ivysaur.jpg" style="height:120px;width:120px">
+        <p>#002<br>Ivysaur<br>Grass · Poison</p>
+        </a>
+        </td>
 
-<td class="e">
-<img src="../img/tải xuống.png" style="height:40px;width:87.5px">
-<p>(Venusaurite)</p>
-</td>
+        <td class="e">
+        <img src="img/tải xuống.png" style="height:40px;width:87.5px">
+        <p>(Level 32)</p>
+        </td>
 
-<td class="e">
-<a href="https://pokemondb.net/pokedex/venusaur" target="_blank">
-<img src="../img/venusaur-mega.jpg" style="height:120px;width:120px">
-<p>#003<br>Mega Venusaur<br>Grass · Poison</p>
-</a>
-</td>
-</tr>
+        <!-- Venusaur -->
+        <td class="e">
+        <a href="https://pokemondb.net/pokedex/venusaur" target="_blank">
+        <img src="img/venusaur.png" style="height:120px;width:120px">
+        <p>#003<br>Venusaur<br>Grass · Poison</p>
+        </a>
+        </td>
 
-<tr class="f">
+        <td class="e">
+        <img src="img/tải xuống.png" style="height:40px;width:87.5px">
+        <p>(Venusaurite)</p>
+        </td>
 
-<!-- Charmander -->
-<td class="e">
-<a href="https://pokemondb.net/pokedex/charmander" target="_blank">
-<img src="../img/charmander.jpg" style="height:120px;width:120px">
-<p>#004<br>Charmander<br>Fire</p>
-</a>
-</td>
+        <td class="e">
+        <a href="https://pokemondb.net/pokedex/venusaur" target="_blank">
+        <img src="img/venusaur-mega.jpg" style="height:120px;width:120px">
+        <p>#003<br>Mega Venusaur<br>Grass · Poison</p>
+        </a>
+        </td>
+        </tr>
 
-<td class="e">
-<img src="../img/tải xuống.png" style="height:40px;width:87.5px">
-<p>(Level 16)</p>
-</td>
+        <tr class="f">
 
-<!-- Charmeleon -->
-<td class="e">
-<a href="https://pokemondb.net/pokedex/charmeleon" target="_blank">
-<img src="../img/charmeleon.jpg" style="height:120px;width:120px">
-<p>#005<br>Charmeleon<br>Fire</p>
-</a>
-</td>
+        <!-- Charmander -->
+        <td class="e">
+        <a href="https://pokemondb.net/pokedex/charmander" target="_blank">
+        <img src="img/charmander.jpg" style="height:120px;width:120px">
+        <p>#004<br>Charmander<br>Fire</p>
+        </a>
+        </td>
 
-<td class="e">
-<img src="../img/tải xuống.png" style="height:40px;width:87.5px">
-<p>(Level 36)</p>
-</td>
+        <td class="e">
+        <img src="img/tải xuống.png" style="height:40px;width:87.5px">
+        <p>(Level 16)</p>
+        </td>
 
-<!-- Charizard -->
-<td class="e">
-<a href="https://pokemondb.net/pokedex/charizard" target="_blank">
-<img src="../img/charizard.jpg" style="height:120px;width:120px">
-<p>#006<br>Charizard<br>Fire · Flying</p>
-</a>
-</td>
+        <!-- Charmeleon -->
+        <td class="e">
+        <a href="https://pokemondb.net/pokedex/charmeleon" target="_blank">
+        <img src="img/charmeleon.jpg" style="height:120px;width:120px">
+        <p>#005<br>Charmeleon<br>Fire</p>
+        </a>
+        </td>
 
-<td class="e">
-<img src="../img/tải xuống.png" style="height:40px;width:87.5px;transform:rotate(-45deg);">
-<p>(Charizardite X)</p>
-<img src="../img/tải xuống.png" style="height:40px;width:87.5px;transform:rotate(45deg);">
-<p>(Charizardite Y)</p>
-</td>
+        <td class="e">
+        <img src="img/tải xuống.png" style="height:40px;width:87.5px">
+        <p>(Level 36)</p>
+        </td>
 
-<td class="e">
-<a href="https://pokemondb.net/pokedex/charizard" target="_blank">
-<img src="../img/charizard-mega-x.jpg" style="height:120px;width:120px">
-<p>Mega Charizard X<br>Fire · Dragon</p>
-<img src="../img/charizard-mega-y.jpg" style="height:120px;width:120px">
-<p>Mega Charizard Y<br>Fire · Flying</p>
-</a>
-</td>
-</tr>
+        <!-- Charizard -->
+        <td class="e">
+        <a href="https://pokemondb.net/pokedex/charizard" target="_blank">
+        <img src="img/charizard.jpg" style="height:120px;width:120px">
+        <p>#006<br>Charizard<br>Fire · Flying</p>
+        </a>
+        </td>
 
-<tr class="f">
+        <td class="e">
+        <img src="img/tải xuống.png" style="height:40px;width:87.5px;transform:rotate(-45deg);">
+        <p>(Charizardite X)</p>
+        <img src="img/tải xuống.png" style="height:40px;width:87.5px;transform:rotate(45deg);">
+        <p>(Charizardite Y)</p>
+        </td>
 
-<!-- Squirtle -->
-<td class="e">
-<a href="https://pokemondb.net/pokedex/squirtle" target="_blank">
-<img src="../img/squirtle.jpg" style="height:120px;width:120px">
-<p>#007<br>Squirtle<br>Water</p>
-</a>
-</td>
+        <td class="e">
+        <a href="https://pokemondb.net/pokedex/charizard" target="_blank">
+        <img src="img/charizard-mega-x.jpg" style="height:120px;width:120px">
+        <p>Mega Charizard X<br>Fire · Dragon</p>
+        <img src="img/charizard-mega-y.jpg" style="height:120px;width:120px">
+        <p>Mega Charizard Y<br>Fire · Flying</p>
+        </a>
+        </td>
+        </tr>
 
-<td class="e">
-<img src="../img/tải xuống.png" style="height:40px;width:87.5px">
-<p>(Level 16)</p>
-</td>
+        <tr class="f">
 
-<!-- Wartortle -->
-<td class="e">
-<a href="https://pokemondb.net/pokedex/wartortle" target="_blank">
-<img src="../img/wartortle.jpg" style="height:120px;width:120px">
-<p>#008<br>Wartortle<br>Water</p>
-</a>
-</td>
+        <!-- Squirtle -->
+        <td class="e">
+        <a href="https://pokemondb.net/pokedex/squirtle" target="_blank">
+        <img src="img/squirtle.jpg" style="height:120px;width:120px">
+        <p>#007<br>Squirtle<br>Water</p>
+        </a>
+        </td>
 
-<td class="e">
-<img src="../img/tải xuống.png" style="height:40px;width:87.5px">
-<p>(Level 36)</p>
-</td>
+        <td class="e">
+        <img src="img/tải xuống.png" style="height:40px;width:87.5px">
+        <p>(Level 16)</p>
+        </td>
 
-<!-- Blastoise -->
-<td class="e">
-<a href="https://pokemondb.net/pokedex/blastoise" target="_blank">
-<img src="../img/blastoise.jpg" style="height:120px;width:120px">
-<p>#009<br>Blastoise<br>Water</p>
-</a>
-</td>
+        <!-- Wartortle -->
+        <td class="e">
+        <a href="https://pokemondb.net/pokedex/wartortle" target="_blank">
+        <img src="img/wartortle.jpg" style="height:120px;width:120px">
+        <p>#008<br>Wartortle<br>Water</p>
+        </a>
+        </td>
 
-<td class="e">
-<img src="../img/tải xuống.png" style="height:40px;width:87.5px">
-<p>(Blastoisinite)</p>
-</td>
+        <td class="e">
+        <img src="img/tải xuống.png" style="height:40px;width:87.5px">
+        <p>(Level 36)</p>
+        </td>
 
-<td class="e">
-<a href="https://pokemondb.net/pokedex/blastoise" target="_blank">
-<img src="../img/blastoise-mega.jpg" style="height:120px;width:120px">
-<p>Mega Blastoise<br>Water</p>
-</a>
-</td>
-</tr>
+        <!-- Blastoise -->
+        <td class="e">
+        <a href="https://pokemondb.net/pokedex/blastoise" target="_blank">
+        <img src="img/blastoise.jpg" style="height:120px;width:120px">
+        <p>#009<br>Blastoise<br>Water</p>
+        </a>
+        </td>
 
-</table>
+        <td class="e">
+        <img src="img/tải xuống.png" style="height:40px;width:87.5px">
+        <p>(Blastoisinite)</p>
+        </td>
+
+        <td class="e">
+        <a href="https://pokemondb.net/pokedex/blastoise" target="_blank">
+        <img src="img/blastoise-mega.jpg" style="height:120px;width:120px">
+        <p>Mega Blastoise<br>Water</p>
+        </a>
+        </td>
+        </tr>
+
+        </table>
+    </main>
+
+    <!-- QUẢNG CÁO PHẢI -->
+    <aside class="ads">
+        <div class="ads-inner">
+            <div class="ad-box">Quảng cáo phải</div>
+        </div>
+    </aside>
+
+</div>
 
 </body>
 </html>
