@@ -9,6 +9,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    max-width: 70%;
 }
 
 .a{
@@ -84,10 +85,14 @@
     min-width: 200px;
     box-shadow: 5px 5px 10px #2e2e1f;
     z-index: 1000;
+    padding: 0;    /* bỏ padding mặc định */
+    margin: 0;     /* bỏ margin mặc định */
+    list-style: none; /* bỏ gạch đầu dòng */
 }
 
 .submenu li {
     list-style: none;
+    width: 100%;
 }
 
 .submenu li a {
@@ -96,6 +101,7 @@
     color: yellow;
     text-decoration: none;
     font-size: 22px;
+    box-sizing: border-box;
 }
 
 .submenu li a:hover {
@@ -356,7 +362,7 @@ table.d iframe {
 
 /* Nội dung giữa */
 .main-content {
-    width: 70%;
+    width: 100%;
     padding: 15px;
     box-sizing: border-box;
 }
