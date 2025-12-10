@@ -4,7 +4,6 @@
 
 .pkm-page {
     min-height: 100vh;
-    background-color: red;
     background-image: url('img/bkgr.jpg');
     background-size: cover;
     background-position: center;
@@ -346,6 +345,14 @@ table.d iframe {
     position: sticky;
     top: 200px;        /* ⬅ đẩy xuống dưới header + shadow */
     height: fit-content;
+}
+
+.ads-left {
+    border-right: 1px solid #ccc;
+}
+
+.ads-right {
+    border-left: 1px solid #ccc;
 }
 
 
